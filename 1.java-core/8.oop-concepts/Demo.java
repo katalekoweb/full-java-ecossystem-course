@@ -72,6 +72,8 @@ class Computer
 
 class Human 
 {
+    // Encapsulation
+    
     private int age; 
     // private ony in the same class
     private String name = "Julian";
