@@ -1,21 +1,15 @@
 class Demo
 {
     public static void main (String args[]) {
-        // Computer computer = new Computer();
-        // computer.playMusic();
-        // String pen = computer.getMeAPen(12.5);
-        // System.out.println(pen);
-
-        int data = 10; // primitives go to the stack memory
-
-        Calculator obj1 = new Calculator(); 
-        Calculator obj2 = new Calculator();
-        // the objects are created on the heap memory
-        int r1 = obj1.add(3, 4, 9);
-        // System.out.println(r1);
-
-        System.out.println(obj1.num);
-        System.out.println(obj2.num);
+        Human obj1 = new Human(31, "Kataleko");
+        Human obj2 = new Human(3, "Alana");
+        // obj.setAge(31);
+        // obj.setName("Julian");
+        // obj.age = 11;
+        // obj.name = "Julian Kataleko";
+        
+        System.out.println(obj1.getName() + ": " + obj1.getAge());
+        System.out.println(obj2.getName() + ": " + obj2.getAge());
     }
 }
 
@@ -49,6 +43,47 @@ class Computer
 
         return "Nothing";
     }
+}
+
+class Human 
+{
+    private int age; 
+    // private ony in the same class
+    private String name = "Julian";
+
+    public Human () // default contructor
+    {
+        age = 31;
+        name = "Julian";
+    }
+
+    public Human(String name) {
+        this.name = name;
+    }
+
+    public Human (int a, String n) // parameterized constructor 
+    {
+        age = a;
+        name = n;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int a) {
+        age = a;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    
 }
 
 // Object Oriented Programmin
