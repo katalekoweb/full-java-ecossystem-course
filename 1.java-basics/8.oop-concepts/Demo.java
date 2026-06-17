@@ -1,16 +1,41 @@
 class Demo
 {
     public static void main (String args[]) {
-        Human obj1 = new Human(31, "Kataleko");
-        Human obj2 = new Human(3, "Alana");
-        // obj.setAge(31);
-        // obj.setName("Julian");
-        // obj.age = 11;
-        // obj.name = "Julian Kataleko";
-        
-        System.out.println(obj1.getName() + ": " + obj1.getAge());
-        System.out.println(obj2.getName() + ": " + obj2.getAge());
+
+        Mobile obj1 = new Mobile();
+        obj1.brand = "Apple";
+        obj1.price = 1500;
+        obj1.name = "Smartphone";
+
+        Mobile obj2 = new Mobile();
+
+        obj1.show();
     }
+}
+
+class Mobile 
+{
+    String brand;
+    int price;
+    static String name;
+
+    static
+    {
+        name = "Phone";
+        System.out.println("In static block");
+    }
+
+    public Mobile () 
+    {
+        brand = "";
+        price = 200;
+        System.out.println("In constructor");
+    }
+
+    public void show () {
+        System.out.println(brand + " : " + price + " : " + name);
+    }
+
 }
 
 class Calculator
