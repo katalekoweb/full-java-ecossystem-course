@@ -19,3 +19,7 @@ Min: 05:05:00
 ## Day 5 - 17-06-2026
 Inheritance
 Min: 06:07:00
+
+## Day 6 - 18-06-2026
+This and super keywords, method overloading, packages, constants, Object class
+Min: 07:20:00
