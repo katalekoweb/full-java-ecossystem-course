@@ -4,7 +4,7 @@ public class Demo {
         // num = 10;
         System.out.println(PIE);
 
-        Calc calc = new Calc();
+        Calcul calc = new Calcul();
         calc.show();
         calc.add(10, 15);
     }
@@ -23,7 +23,7 @@ final class Calcul
     }
 }
 
-class AdvCalc extends Calcul
-{
+// class AdvCalc extends Calcul // error
+// {
 
-}
+// }
